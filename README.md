@@ -11,6 +11,6 @@
 👤 **Cxetive**
 
 - Github: [@Cxetive](https://github.com/Cxetive)
-- Discord: [@Lyxcode Community](https://discord.gg/YJGN7t5947)
+- Discord: [@OptixRP Community](https://discord.gg/optixrp)
 
 ---
