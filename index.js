@@ -12,7 +12,7 @@ client.commands = new Collection();
 client.subCommands = new Collection();
 client.events = new Collection();
 
-.require(`./Handlers/crashHandler.js`)(client, PG, Ascii)
+require(`./Handlers/crashHandler.js`)(client, PG, Ascii)
 
 const { connect } = require("mongoose");
 connect(client.config.DatabaseURL, {})
