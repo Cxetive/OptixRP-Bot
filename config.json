@@ -1,0 +1,8 @@
+{
+  "token": "MTAzNDEwMTk2NjIxODk4OTU2OA.GuDtdn.NmzW4vwmWgnMZqnjgteyTxWiVI0frtTRc5UyC0",
+  "developerGuild": "1023935745167204392",
+  "DatabaseURL": "mongodb+srv://cx:cx123@cluster0.ckvwoyi.mongodb.net/?retryWrites=true&w=majority",
+
+  "MESSAGELOGS": "https://discord.com/api/webhooks/1040601146651320390/hXInztu3uPCeZ412kRHuJc7bOrcG_OMZja4yHp4xFdZ1xJW32wwASW5Scgxs3ZbST6nF",
+  "JOINLOGS": "https://discord.com/api/webhooks/1042545205896814702/b70mqYMHwafZQsz_uE-0UsOC-E74AGu9xTeASg-qSJTxcouHmuvW99FxYL__y8cCt3jL"
+}
