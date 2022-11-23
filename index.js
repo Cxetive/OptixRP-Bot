@@ -3,7 +3,7 @@ const { Guilds, GuildMembers, GuildMessages } = GatewayIntentBits;
 const { User, Message, GuildMember, ThreadMember } = Partials;
 
 const Ascii = require('ascii-table')
-const PG = require('PG')
+const PG = require('pg')
 
 const client = new Client({
   intents: [Guilds, GuildMembers, GuildMessages],
