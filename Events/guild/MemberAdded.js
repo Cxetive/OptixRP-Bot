@@ -16,7 +16,7 @@ module.exports = {
         const JoinEmbed = new EmbedBuilder()
         .setColor("#36393f")
         .setDescription(
-            `🦸🏻‍♀️ ${member.user.username} is zojuist de server binnen gekomen.
+            `🦸🏻‍♀️ <@${member.id}> is zojuist de server binnen gekomen.
             \n
             We hebben nu ${guild.memberCount} mensen in de server`
         )
