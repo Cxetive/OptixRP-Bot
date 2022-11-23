@@ -2,6 +2,9 @@ const { Client, GatewayIntentBits, Partials, Collection } = require("discord.js"
 const { Guilds, GuildMembers, GuildMessages } = GatewayIntentBits;
 const { User, Message, GuildMember, ThreadMember } = Partials;
 
+const Ascii = require('ascii-table')
+const PG = require('PG')
+
 const client = new Client({
   intents: [Guilds, GuildMembers, GuildMessages],
   partials: [User, Message, GuildMember, ThreadMember],
