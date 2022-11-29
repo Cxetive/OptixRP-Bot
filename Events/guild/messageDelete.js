@@ -8,7 +8,7 @@ module.exports = {
         const embed = new EmbedBuilder()
         .setDescription([
             `[Bericht](${message.url}) verwijderd door:`,
-            ` ${message.author}`
+            `${message}`
             `\n`
             `Verwijderd Bericht:`,
             `\`\`\`${message.content}\`\`\``
