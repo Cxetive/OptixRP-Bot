@@ -9,7 +9,7 @@
         async execute(interaction) {
             const { guild, member, message } = interaction;
             
-        interaction.DeferReply({content: "Informatie aan het ophalen"})
+        interaction.reply({content: "Informatie aan het ophalen"})
 
        
             var interval = setInterval (function () {
