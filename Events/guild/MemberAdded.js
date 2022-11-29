@@ -22,7 +22,7 @@ module.exports = {
         )
         .setThumbnail("https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png")
 		
-        member.roles.add("1042539541829005404")
+        member.roles.add("1046921248464187492")
         new WebhookClient({
             url: JOINLOGS,
         })
