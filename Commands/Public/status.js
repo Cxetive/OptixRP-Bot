@@ -6,7 +6,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName("status")
     .setDescription("Will repond with pong."),
-    async execute(client, interaction) {
+    async execute(interaction) {
         const { guild, member, message } = interaction;
 
         const status = server.getServerStatus()
@@ -31,11 +31,6 @@ module.exports = {
                 interaction.reply({embeds: [embed]});
         }
 
-
-    
-        
-        
     }
-
     
 }
