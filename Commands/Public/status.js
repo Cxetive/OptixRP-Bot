@@ -8,7 +8,15 @@
         .setDescription("Will repond with pong."),
         async execute(interaction) {
             const { guild, member, message } = interaction;
+            server.getPlayers().then((data) => {
+                let result  = [];
+                let index = 1;
+                for (let player of data) {
+                  result.push(`${index++}. ${player.name} | ${player.id} ID | ${player.ping} ping\n`);
+                }
 
+                console.log(result)
+            })
             const status = server.getServerStatus()
             console.log(`Status : ${server.getPlayers()}`)
             if(server.getPlayers()) {
