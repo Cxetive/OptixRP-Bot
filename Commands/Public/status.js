@@ -38,7 +38,7 @@
                             { name: `**Server Status**`, value: `\`\`\`Offline\`\`\``},
                         )
     
-                        msg.edit({embeds: [embed]});
+                        interaction.editReply({embeds: [embed]});
                 }
                 console.log(result)
             })
