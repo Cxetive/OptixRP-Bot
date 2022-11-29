@@ -9,7 +9,7 @@
         async execute(interaction) {
             const { guild, member, message } = interaction;
             
-        interaction.reply({content: "Informatie aan het ophalen"})
+        interaction.reply({embeds: [new EmbedBuilder().setDescription("Informatie aan het ophalen")})
 
        
             var interval = setInterval (function () {
