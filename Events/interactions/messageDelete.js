@@ -1,39 +1,29 @@
-const { EmbedBuilder, Message, WebhookClient, ReactionUserManager } = require('discord.js')
-const { MESSAGELOGS } = require("../../config.json")
+const { EmbedBuilder, WebhookClient } = require('discord.js')
+
 
 module.exports = {
-    name: "messageDelete",
+    name: "messageUpdate",
 
-    /**
-     * @param {Message} message
-     */
+    async execute(oldMessage, newMessage) {
+        console.log(`oldMessage : ${oldMessage.content} || newMessage ${newMessage.content}`)
 
-    execute(message) { 
-
-        const LOG = new EmbedBuilder()
-        .setColor("#36393f")
-        .setDescription(
-            `📕 Een [bericht](${message.url}) van ${message.author.tag}
-            is **verwijderd**\n
-            **Verwijderd Bericht:**\n ${
-                message.content ? message.content : "None"
-            }`.slice(0, 4096)
-        );
-
-        if (message.attachments.size >= 1) {
-            LOG.addFields(
-                `Attachments:`,
-                `${message.attachments.map((a) => a.url)}`,
-                true
-            );
-        }
+        const embed = new EmbedBuilder()
+        .addFields(
+            { name: `**[Bericht](${oldMessage.url}) bewerkt:**`, value: `${oldMessage.author}`},
+            { name: "**Oud Bericht:**", value: `\`\`\`${oldMessage.content}\`\`\``, inline: true},
+            { name: "**Nieuw Bericht:**", value: `\`\`\`${newMessage.content}\`\`\``, inline: true}
+        )
+        .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
+        .setFooter({ text: `Optix Roleplay™ | Berichten Logs`, iconURL: `https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`})
+                        
 
         new WebhookClient({
-            url: MESSAGELOGS,
+            url: "https://discord.com/api/webhooks/1042545060899737723/6TDJt_X673mRMsiUEwl2KaHhG6vvzzxCLUishgLxXCvZsRQaCGEDTrvd5tUwGl1tA9Tr",
         })
-        .send({ embeds: [LOG] })
+        .send({ embeds: [embed] })
         .catch((err) => {
             console.log(err)
         })
-    },
-};
+    }
+
+}
