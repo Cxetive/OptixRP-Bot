@@ -9,7 +9,7 @@
         async execute(interaction) {
             const { guild, member, message } = interaction;
             
-            const msg = await interaction.reply({content: "informatie aan het ophalen"})
+            msg = await interaction.reply({content: "informatie aan het ophalen"})
             var interval = setInterval (function () {
             server.getPlayers().then((data) => {
                 let result  = [];
