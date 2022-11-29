@@ -22,7 +22,6 @@
                 const status = server.getServerStatus()
                 console.log(`Status : ${server.getPlayers()}`)
                 if(server.getPlayers()) {
-                    interaction.DeferReply()
                     const embed = new EmbedBuilder()
                         .addFields(
                             { name: `**Server Status**`, value: `\`\`\`Online\`\`\``},
