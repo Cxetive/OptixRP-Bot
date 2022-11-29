@@ -10,7 +10,7 @@ module.exports = {
         const { guild, member, message } = interaction;
 
         const status = server.getServerStatus()
-        console.log(`Status : ${status}`)
+        console.log(`Status : ${server.getServerStatus()}`)
         if(status === "online") {
             const AantalSpelers = await server.getPlayersOnline()
             const embed = new EmbedBuilder()
