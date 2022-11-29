@@ -9,7 +9,7 @@
         async execute(interaction) {
             const { guild, member, message } = interaction;
             
-            msg = await interaction.reply({content: "informatie aan het ophalen"})
+           
             var interval = setInterval (function () {
             server.getPlayers().then((data) => {
                 let result  = [];
@@ -20,6 +20,7 @@
                 const status = server.getServerStatus()
                 console.log(`Status : ${server.getPlayers()}`)
                 if(server.getPlayers()) {
+                    interaction.DeferReply()
                     const embed = new EmbedBuilder()
                         .addFields(
                             { name: `**Server Status**`, value: `\`\`\`Online\`\`\``},
