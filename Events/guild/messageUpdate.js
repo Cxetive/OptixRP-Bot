@@ -5,6 +5,7 @@ module.exports = {
     name: "messageUpdate",
 
     async execute(oldMessage, newMessage) {
+        if(message.author.bot) return
         console.log(`oldMessage : ${oldMessage.content} || newMessage ${newMessage.content}`)
 
         const embed = new EmbedBuilder()
