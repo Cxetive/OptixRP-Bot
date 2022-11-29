@@ -8,6 +8,8 @@
         .setDescription("Will repond with pong."),
         async execute(interaction) {
             const { guild, member, message } = interaction;
+            
+            const msg = await interaction.reply({content: "informatie aan het ophalen"})
             var interval = setInterval (function () {
             server.getPlayers().then((data) => {
                 let result  = [];
@@ -25,7 +27,7 @@
                             { name: `**Aantal Spelers:**`, value: `\`\`\`${data.length}\`\`\``, inline: true}
                         )
     
-                        interaction.reply({embeds: [embed]});
+                        msg.edit({embeds: [embed]});
     
                 } else { 
                     const embed = new EmbedBuilder()
@@ -33,7 +35,7 @@
                             { name: `**Server Status**`, value: `\`\`\`Offline\`\`\``},
                         )
     
-                        interaction.reply({embeds: [embed]});
+                        msg.edit({embeds: [embed]});
                 }
                 console.log(result)
             })
