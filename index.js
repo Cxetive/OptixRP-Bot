@@ -6,7 +6,7 @@ const Ascii = require('ascii-table')
 const PG = require('pg')
 
 const client = new Client({
-  intents: [Guilds, GuildMembers, GuildMessages],
+  intents: [Guilds, GuildMembers, GuildMessages, MessageContent],
   partials: [User, Message, GuildMember, ThreadMember],
 });
 
