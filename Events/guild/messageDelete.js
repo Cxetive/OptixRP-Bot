@@ -7,12 +7,12 @@ module.exports = {
     async execute(message) {
         const embed = new EmbedBuilder()
         .addFields(
-            { name: `**[Bericht](${message.url}) verwijderd:**`, value: `${message.author}`},
+            { name: `**[Bericht](${oldMessage.url}) verwijderd:**`, value: `${oldMessage.author}`},
             { name: "**Verwijderd Bericht**", value: `\`\`\`${message.content}\`\`\``},
         )
         .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
         .setFooter({ text: `Optix Roleplay™ | Berichten Logs`, iconURL: `https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`})
-        .setFooter();
+        .setTimestamp();
                         
 
         new WebhookClient({
