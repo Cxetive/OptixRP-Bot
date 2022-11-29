@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits, Partials, Collection } = require("discord.js");
-const { Guilds, GuildMembers, GuildMessages } = GatewayIntentBits;
+const { Guilds, GuildMembers, GuildMessages, MessageContent } = GatewayIntentBits;
 const { User, Message, GuildMember, ThreadMember } = Partials;
 
 const Ascii = require('ascii-table')
