@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js')
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
 const fivem = require("discord-fivem-api");
 const server = new fivem.DiscordFivemApi("45.140.191.13:25565");
 
@@ -30,6 +30,12 @@ module.exports = {
 
                 interaction.reply({embeds: [embed]});
         }
+
+
+    
+        
         
     }
+
+    
 }
