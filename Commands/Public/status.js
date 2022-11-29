@@ -9,7 +9,9 @@
         async execute(interaction) {
             const { guild, member, message } = interaction;
             
-           
+        interaction.reply({content: "Informatie aan het ophalen"}).then((msg) => {
+
+       
             var interval = setInterval (function () {
             server.getPlayers().then((data) => {
                 let result  = [];
@@ -42,7 +44,7 @@
             })
            
         }, 1 * 1000);
-
+             })
         }
         
     }
