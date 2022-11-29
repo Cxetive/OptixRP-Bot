@@ -9,7 +9,9 @@ module.exports = {
     async execute(client, interaction) {
         const { guild, member, message } = interaction;
 
-        server.getPlayers().then((data) => {
+        const status = server.getServerStatus()
+
+        if(status === "online") {
             const AantalSpelers = await server.getPlayersOnline()
             const embed = new EmbedBuilder()
                 .addFields(
@@ -19,14 +21,15 @@ module.exports = {
                 )
 
                 interaction.reply({embeds: [embed]});
-        }).catch((err) => {
+
+        } else { 
             const embed = new EmbedBuilder()
                 .addFields(
                     { name: `**Server Status**`, value: `🔴 Offline`},
                 )
-                interaction.reply({embeds: [embed]})
-        });
 
+                interaction.reply({embeds: [embed]});
+        }
+        
     }
-
 }
