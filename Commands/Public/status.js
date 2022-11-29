@@ -9,7 +9,7 @@
         async execute(interaction) {
             const { guild, member, message } = interaction;
             
-        interaction.reply({content: "Informatie aan het ophalen"}).then((msg) => {
+        interaction.DeferReply({content: "Informatie aan het ophalen"})
 
        
             var interval = setInterval (function () {
@@ -22,6 +22,7 @@
                 const status = server.getServerStatus()
                 console.log(`Status : ${server.getPlayers()}`)
                 if(server.getPlayers()) {
+                    interaction.DeferReply()
                     const embed = new EmbedBuilder()
                         .addFields(
                             { name: `**Server Status**`, value: `\`\`\`Online\`\`\``},
@@ -29,7 +30,7 @@
                             { name: `**Aantal Spelers:**`, value: `\`\`\`${data.length}\`\`\``, inline: true}
                         )
     
-                        msg.edit({embeds: [embed]});
+                        interaction.editReply({embeds: [embed]});
     
                 } else { 
                     const embed = new EmbedBuilder()
@@ -43,7 +44,6 @@
             })
            
         }, 1 * 1000);
-             })
         }
         
     }
