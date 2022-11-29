@@ -19,6 +19,8 @@
                 for (let player of data) {
                   result.push(`${index++}. ${player.name} | ${player.id} ID | ${player.ping} ping\n`);
                 }
+                const status = server.getServerStatus()
+                console.log(`Status : ${server.getPlayers()}`)
                 if(server.getPlayers()) {
                     const embed = new EmbedBuilder()
                         .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
