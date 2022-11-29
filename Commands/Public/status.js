@@ -25,7 +25,7 @@
                     const embed = new EmbedBuilder()
                         .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
                         .setFooter({ text: `Optix Roleplay™ | Server Status`, iconURL: `https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`})
-                        .setColor("GREEN")
+                        .setColor("#2bff00")
                         .addFields(
                             { name: `**Server Status**`, value: `\`\`\`Online\`\`\``},
                             { name: `**Connect**`, value: `\`\`\`F8 -> connect 45.140.191.13:25565\`\`\``, inline: true},
@@ -38,7 +38,7 @@
                     const embed = new EmbedBuilder()
                         .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
                         .setFooter({ text: `Optix Roleplay™ | Server Status`, iconURL: `https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`})
-                        .setColor("RED")
+                        .setColor("#ff0000")
                         .addFields(
                             { name: `**Server Status**`, value: `\`\`\`Offline\`\`\``},
                         )
