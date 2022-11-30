@@ -15,7 +15,7 @@ module.exports = {
             { name: "**Oud Bericht:**", value: `\`\`\`${oldMessage.content}\`\`\``, inline: true},
             { name: "**Nieuw Bericht:**", value: `\`\`\`${newMessage.content}\`\`\``, inline: true}
         )
-        .setDescription(`Ga naar [Bericht](${message.url})`)
+        .setDescription(`Ga naar [Bericht](${oldMessage.url})`)
         .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
         .setFooter({ text: `Optix Roleplay™ | Berichten Logs`, iconURL: `https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`})
                         
