@@ -6,8 +6,9 @@ module.exports = {
 
     async execute(message) {
         const embed = new EmbedBuilder()
-        .setTitle(`📕 | Een bericht is verwijderd van ${message.author}`)
+        .setTitle(`📕 | Een bericht is verwijderd`)
         .addFields(
+            { name: `Bericht Eigenaar`, value: `${message.author}`},
             { name: `Bericht Verwijderd:`, value: `[${message.content}](${message.url})`}
             )
         .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
