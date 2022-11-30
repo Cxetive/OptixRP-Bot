@@ -6,13 +6,10 @@ module.exports = {
 
     async execute(message) {
         const embed = new EmbedBuilder()
-        .setDescription([
-            `[Bericht](${message.url}) verwijderd door:`,
-            `${message}`,
-            `\n`,
-            `Verwijderd Bericht:`,
-            `\`\`\`${message.content}\`\`\``
-        ])
+        .setTitle(`📕 | Een bericht is verwijderd van ${message.author}`)
+        .addFields(
+            { name: `Bericht Verwijderd:`, value: `[${message.content}](${message.url})`}
+            )
         .setThumbnail(`https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`)
         .setFooter({ text: `Optix Roleplay™ | Berichten Logs`, iconURL: `https://cdn.discordapp.com/attachments/1029076050677870643/1040586689644597258/Naamloodfgs-1.png`})
         .setTimestamp();
