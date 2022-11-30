@@ -5,6 +5,7 @@ module.exports = {
     name: "messageDelete",
 
     async execute(message) {
+        if(message.author.bot) return;
         const embed = new EmbedBuilder()
         .setTitle(`📕 | Een bericht is verwijderd`)
         .addFields(
