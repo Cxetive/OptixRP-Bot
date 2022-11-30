@@ -11,7 +11,7 @@ module.exports = {
         const embed = new EmbedBuilder()
         .setTitle(`📕 | Een bericht is bewerkt`)
         .addFields(
-            { name: "**Bericht bewerkt:**", value: `[${oldMessage.author}](${oldMessage.url)`},
+            { name: "**Bericht bewerkt:**", value: `[${oldMessage.author}](${oldMessage.url})`},
             { name: "**Oud Bericht:**", value: `\`\`\`${oldMessage.content}\`\`\``, inline: true},
             { name: "**Nieuw Bericht:**", value: `\`\`\`${newMessage.content}\`\`\``, inline: true}
         )
