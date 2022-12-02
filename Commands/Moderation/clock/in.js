@@ -13,7 +13,7 @@ module.exports = {
 
         const { guild, member } = interaction;
 
-        interaction.reply({ content: "Je bent nu ingeclockt"})
+        
 
         const embed = new EmbedBuilder()
             .setDescription(`${member} Heeft zich zojuist ingeklokt en is in dienst als Staff`)

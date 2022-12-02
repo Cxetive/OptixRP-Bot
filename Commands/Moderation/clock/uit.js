@@ -9,11 +9,11 @@ module.exports = {
      * @param {Client} client;
      */
 
-    async execute(client, interaction) {
+    async execute(interaction) {
 
         const { guild, member } = interaction;
         
-        interaction.reply({ content: "Je bent nu uitgeclockt"})
+        
 
         const embed = new EmbedBuilder()
             .setDescription(`${member} Heeft zich zojuist uitgelockt en is niet meer in dienst als Staff`)
