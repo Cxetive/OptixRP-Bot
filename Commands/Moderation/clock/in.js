@@ -9,9 +9,9 @@ module.exports = {
      * @param {Client} client;
      */
 
-    async execute(client, interaction) {
+    async execute(interaction) {
 
-        const { guild, member } = interaction;
+        const { options, member, guild } = interaction;
 
         
 
