@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder, WebhookClient } = require('discord.js')
 
 
 module.exports = {
@@ -12,6 +12,8 @@ module.exports = {
     async execute(client, interaction) {
 
         const { guild, member } = interaction;
+        
+        interaction.reply({ content: "Je bent nu uitgeclockt"})
 
         const embed = new EmbedBuilder()
             .setDescription(`${member} Heeft zich zojuist uitgelockt en is niet meer in dienst als Staff`)
