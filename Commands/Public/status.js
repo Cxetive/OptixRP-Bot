@@ -5,6 +5,7 @@
     module.exports = {
         data: new SlashCommandBuilder()
         .setName("status")
+        .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers)
         .setDescription("Will repond with pong."),
         async execute(interaction) {
             const { guild, member, message } = interaction;
@@ -46,7 +47,7 @@
                 }
             })
            
-        }, 1 * 1000);
+        }, 1 * 60000);
         }
         
     }
