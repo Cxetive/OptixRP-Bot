@@ -1,4 +1,4 @@
-    const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
+    const { EmbedBuilder, SlashCommandBuilder, PermissionFlagsBits } = require('discord.js')
     const fivem = require("discord-fivem-api");
     const server = new fivem.DiscordFivemApi("45.140.191.13:25565");
 

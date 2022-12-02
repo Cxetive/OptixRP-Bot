@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder, WebhookClient } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder, WebhookClient, PermissionFlagsBits } = require('discord.js')
 
 
 module.exports = {
