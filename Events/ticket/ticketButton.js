@@ -167,7 +167,7 @@ const {
               .create({
                 name: `${interaction.user.username}-ticket`,
                 type: ChannelType.GuildText,
-                parent: "1044177916088569906",
+                parent: "1056970625450782800",
                 permissionOverwrites: [
                   {
                     id: userId1,
@@ -279,7 +279,7 @@ const {
                   .create({
                     name: `${interaction.user.username}-ticket`,
                     type: ChannelType.GuildText,
-                    parent: "1044180317365358592",
+                    parent: "1056970662373240833",
                     permissionOverwrites: [
                       {
                         id: userId2,
@@ -391,7 +391,7 @@ const {
                       .create({
                         name: `${interaction.user.username}-ticket`,
                         type: ChannelType.GuildText,
-                        parent: "1044180366824574986",
+                        parent: "1056970698012237886",
                         permissionOverwrites: [
                           {
                             id: userId3,
@@ -504,7 +504,7 @@ const {
                           .create({
                             name: `${interaction.user.username}-ticket`,
                             type: ChannelType.GuildText,
-                            parent: "1044180402232905738",
+                            parent: "1056970737929433109",
                             permissionOverwrites: [
                               {
                                 id: userId4,
@@ -617,7 +617,7 @@ const {
                           .create({
                             name: `${interaction.user.username}-ticket`,
                             type: ChannelType.GuildText,
-                            parent: "1044180442330439681",
+                            parent: "1056970776206655580",
                             permissionOverwrites: [
                               {
                                 id: userId5,
